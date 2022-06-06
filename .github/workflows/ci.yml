@@ -15,4 +15,6 @@ jobs:
     - name: Build
       run: yarn
     - name: Test
+      with:
+		    command-prefix: yarn dlx
       run: yarn test --ci
